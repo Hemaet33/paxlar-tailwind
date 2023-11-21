@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="./public/style.css">
   <title>paxlar project master clone</title>
 </head>
-<body class="font-bodyFont overflow-x-hidden">
+<body class="font-bodyFont overflow-x-hidden selection:bg-black selection:text-white">
   <!-- Top Nav Section -->
   <section class="bg-gray-200 w-100 py-3 text-xs text-gray-500 uppercase">
     <div class="container">
@@ -20,10 +20,10 @@
         </div>
         <div class="col-span-1">
           <ul class="flex items-center sm:justify-end justify-center gap-10">
-            <li><a href="">Help</a></li>
-            <li><a href="">Support</a></li>
-            <li><a href="">Login</a></li>
-            <li><a href="">Register</a></li>
+            <li><a class="hover:text-black" href="">Help</a></li>
+            <li><a class="hover:text-black" href="">Support</a></li>
+            <li><a class="hover:text-black" href="">Login</a></li>
+            <li><a class="hover:text-black" href="">Register</a></li>
           </ul>
         </div>
       </div>
@@ -32,21 +32,21 @@
  <!-- Top Nav Section -->
 
  <!-- Bottom Nav Section -->
- <section class="bottom-nav-section">
+ <section class="bottom-nav-section bg-white transition-all duration-300 py-3">
   <div class="container">
-    <div class="grid justify-between items-center grid-cols-4 py-3 px-2 gap-2 w-full">
+    <div class="grid justify-between items-center grid-cols-4 px-2 gap-2 w-full">
       <div class="col-span-1 px-6">
         <a class="w-10" href=""><img src="./public/images/Paxlar_logo.png" alt=""></a>
       </div>
-      <div class="nav absolute xl:static xl:w-full w-1/2 bg-white p-7 top-28 -right-full col-span-3 transition-all duration-300">
+      <div class="nav absolute bg-white xl:static xl:w-full w-1/2 xl:bg-transparent p-7 top-28 -right-full col-span-3 transition-all duration-200">
         <ul class="flex xl:flex-row flex-col justify-around text-black-700 uppercase text-sm gap-6 xl:gap-0 text-center">
-          <li class="after hover:text-black-800"><a href="">Home</a></li>
-          <li class="after hover:text-black-800"><a href="">About</a></li>
-          <li class="after hover:text-black-800"><a href="">Exchange</a></li>
-          <li class="after hover:text-black-800"><a href="">Service</a></li>
-          <li class="after hover:text-black-800"><a href="">Winning Equipment</a></li>
-          <li class="after hover:text-black-800"><a href="">Pages</a></li>
-          <li class="after hover:text-black-800"><a href="">Contact</a></li>
+          <li class="after hover:text-gray-700"><a href="">Home</a></li>
+          <li class="after hover:text-gray-700"><a href="">About</a></li>
+          <li class="after hover:text-gray-700"><a href="">Exchange</a></li>
+          <li class="after hover:text-gray-700"><a href="">Service</a></li>
+          <li class="after hover:text-gray-700"><a href="">Winning Equipment</a></li>
+          <li class="after hover:text-gray-700"><a href="">Pages</a></li>
+          <li class="after hover:text-gray-700"><a href="">Contact</a></li>
           <li><a class="btn border-paxlar bg-paxlar text-white" href="">Join Now</a></li>
         </ul>
       </div>
@@ -62,9 +62,11 @@
  <!-- Bottom Nav Section -->
 
  <!-- Hero Section -->
- <section class="bg-[url(./images/Banner_bg.jpg)] w-full bg-center bg-cover bg-no-repeat font-raleway h-fullvh md:h-76 grid  text-slate-100 text-center py-10 md:py-0">
+ <section class="font-raleway h-fullvh md:h-76 grid  text-slate-100 text-center py-10 md:py-0 relative">
+    <div class="bg-[url(./images/hero-2.jpg)] w-full bg-center bg-cover bg-no-repeat font-raleway h-fullvh md:h-76 grid  text-slate-100 text-center py-10 md:py-0 absolute banner-slide transition-all duration-500 ease-in"></div>
+    <div class="bg-[url(./images/hero-1.jpg)] w-full bg-center bg-cover bg-no-repeat font-raleway h-fullvh md:h-76 grid  text-slate-100 text-center py-10 md:py-0 absolute banner-slide transition-all duration-500 ease-in"></div>
     <div class="container">
-        <div class="w-9/12 my-auto mx-auto grid gap-10">
+        <div class="w-9/12 my-auto mx-auto grid gap-10 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-banner py-16 backdrop-blur-sm">
             <h1 class="w-full text-6xl font-bold ">Secure & Easy Way to Bitcoin</h1>
              <div class="w-9/12 m-auto">
               <div class="grid md:grid-cols-3 gap-5 md:gap-0">
@@ -92,24 +94,24 @@
  <!-- Hero Section -->
 
  <!-- Feature Section -->
- <section class="w-full py-24">
+ <section class="w-full py-24 bg-lime-100">
   <div class="container">
-    <div class="px-10 grid md:grid-cols-3 gap-6 text-gray-500 text-sm">
-       <div class="group border border-gray-300 rounded-md py-14 px-5 text-center hover:bg-[linear-gradient(to_top,rgba(255,156,26,.8),rgba(175,255,26,.8)),url('./images/bitcoin.png')]  hover:text-gray-100">
+    <div class="transition-all duration-300 ease-in px-10 grid md:grid-cols-3 gap-6 text-gray-500 text-sm">
+       <div class="transition-all duration-700 ease group shadow-md rounded-md py-14 px-5 text-center hover:bg-[linear-gradient(to_top,rgba(255,156,26,.8),rgba(175,255,26,.8)),url('./images/bitcoin.png')]  hover:text-gray-100 bg-white">
         <div class="mb-10 mt-5 text-paxlar group-hover:text-gray-300"><i class="py-10 flaticon-employee"></i></div>
         <h4 class="text-base font-semibold mb-2">Verif your ID</h4>
-        <P class=" leading-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</P>
+        <P class=" leading-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</P>
        </div>
-        <div class="group border border-gray-300 rounded-md py-14 px-5 text-center hover:bg-[linear-gradient(to_top,rgba(255,156,26,.8),rgba(175,255,26,.8)),url('./images/bitcoin.png')]  hover:text-gray-100">
+        <div class="transition-all duration-700 ease group shadow-md rounded-md py-14 px-5 text-center hover:bg-[linear-gradient(to_top,rgba(255,156,26,.8),rgba(175,255,26,.8)),url('./images/bitcoin.png')]  hover:text-gray-100 bg-white">
           <div class="mb-10 mt-5 text-paxlar group-hover:text-gray-300"><i class="py-10 flaticon-hand"></i></div>
         <h4 class="text-base font-semibold mb-2">Make your Payment</h4>
-        <P class=" leading-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        <P class=" leading-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
         </P>
         </div>
-        <div class="group border border-gray-300 rounded-md py-14 px-5 text-center hover:bg-[linear-gradient(to_top,rgba(255,156,26,.8),rgba(175,255,26,.8)),url('./images/bitcoin.png')]  hover:text-gray-100">
+        <div class="transition-all duration-700 ease group shadow-md rounded-md py-14 px-5 text-center hover:bg-[linear-gradient(to_top,rgba(255,156,26,.8),rgba(175,255,26,.8)),url('./images/bitcoin.png')]  hover:text-gray-100 bg-white">
           <div class="mb-10 mt-5 text-paxlar group-hover:text-gray-300"><i class="py-10 flaticon-money-bag"></i></div>
         <h4 class="text-base font-semibold mb-2">Buy or Sells order</h4>
-        <P class=" leading-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</P>
+        <P class=" leading-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</P>
         </div>
       </div>
   </div>
@@ -117,7 +119,7 @@
  <!-- Feature Section -->
 
  <!-- Service Section -->
- <section class="pb-20">
+ <section class="py-20">
     <div class="heading">
       <h1 class="heading-h1">services we provide</h1>
       <p class="heading-p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
@@ -125,20 +127,20 @@
     </div>
   <div class="container">
     <div class="grid md:grid-cols-3 gap-5">
-        <div class="mb-4 grid gap-5 text-center px-3">
+        <div class="mb-4 grid gap-5 text-center p-3 transition-all duration-300 ease-in hover:border hover:border-gray-300 hover:shadow-md hover:-translate-y-2">
           <img class="w-28 h-28 m-auto" src="./public/images/circle_bitcoin.png" alt="btc">
           <h2 class="text-xl font-semibold">Bitcoin</h2>
-          <p class="leading-4 text-gray-500 text-sm mb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
+          <p class="leading-5 text-gray-500 text-sm mb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
         </div>
-        <div class="mb-4 grid gap-5 text-center px-3">
+        <div class="mb-4 grid gap-5 text-center p-3 transition-all duration-300 ease-in hover:border hover:border-gray-300 hover:shadow-md hover:-translate-y-2">
           <img class="w-28 h-28 m-auto" src="./public/images/bitcoin_transaction.png" alt="transaction">
           <h2 class="text-lg font-semibold">Bitcoin Transaction</h2>
-          <p class="leading-4 text-gray-500 text-sm mb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
+          <p class="leading-5 text-gray-500 text-sm mb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
         </div>
-        <div class="mb-4 grid gap-5 text-center px-3">
+        <div class="mb-4 grid gap-5 text-center p-3 transition-all duration-300 ease-in hover:border hover:border-gray-300 hover:shadow-md hover:-translate-y-2">
           <img class="w-28 h-28 m-auto" src="./public/images/bitcoin_exchange.png" alt="exchange">
           <h2 class="text-lg font-semibold">Bitcoin Exchange</h2>
-          <p class="leading-4 text-gray-500 text-sm mb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
+          <p class="leading-5 text-gray-500 text-sm mb-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less.</p>
         </div>
     </div>
     <div class="mt-20 text-center">
@@ -149,7 +151,7 @@
  <!-- Service Section -->
 
  <!-- Buy and Sell Section -->
- <section class="w-full pt-24 bg-[linear-gradient(to_top,rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('images/bitcoin_blur.jpg')] bg-no-repeat bg-cover bg-center text-white">
+ <section class="buy-sell w-full pt-24 bg-[linear-gradient(to_top,rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('images/bitcoin_blur.jpg')] bg-no-repeat bg- bg-center text-white bg-fixed bg-cover">
   <div class="container">
     <div class="grid md:grid-cols-2 gap-20">
       <div class="grid justify-center md:justify-end order-last md:order-first relative col-span-1">
@@ -195,23 +197,23 @@
  <!-- Buy and Sell Section -->
 
  <!-- Counter Section -->
- <section class="w-full py-20 bg-paxlar">
+ <section class="w-full py-20 bg-paxlar counter">
   <div class="container">
     <div class="grid sm:grid-cols-4 text-center text-white">
         <div class="col-span-1">
-          <h2 class="text-5xl font-bold mb-4">5.5</h2>
+          <h2 class="text-5xl font-bold mb-4 count1">3000</h2>
           <span>MLN TRANSACTIONS</span>
         </div>
         <div class="col-span-1">
-          <h2 class="text-5xl font-bold mb-4">5.5</h2>
+          <h2 class="text-5xl font-bold mb-4 count2">1500</h2>
           <span>MLN TRANSACTIONS</span>
         </div>
         <div class="col-span-1">
-          <h2 class="text-5xl font-bold mb-4">5.5</h2>
+          <h2 class="text-5xl font-bold mb-4 count3">6700</h2>
           <span>MLN TRANSACTIONS</span>
         </div>
         <div class="col-span-1">
-          <h2 class="text-5xl font-bold mb-4">5.5</h2>
+          <h2 class="text-5xl font-bold mb-4 count4">10</h2>
           <span>MLN TRANSACTIONS</span>
         </div>
     </div>
@@ -224,27 +226,27 @@
  <section class="py-24">
   <div class="xl:container">
     <div class="w-full lg:w-10/12 m-auto relative">
-      <div class=" grid justify-center mb-14 lg:mb-0 gap-3 lg:absolute lg:top-0 lg:left-36">
+      <div class="grid justify-center mb-14 lg:animate-[drop_1500ms_ease-in-out_200ms_infinite] lg:mb-0 gap-3 lg:absolute lg:top-0 lg:left-36">
           <span class="rotated-span after:border-red-400 text-red-400"><i class="scale-125 fas fa-lock"></i></span>
           <strong class="text-lg text-gray-400">safe & secure</strong>
       </div>
-      <div class="grid justify-center mb-14 lg:mb-0  gap-3 lg:absolute lg:left-0 lg:top-1/2 -translate-y-1/2">
+      <div class="grid justify-center mb-14 lg:animate-[drop_1500ms_ease-in-out_400ms_infinite] lg:mb-0  gap-3 lg:absolute lg:left-0 lg:top-1/3 mt-4">
           <span class="rotated-span after:border-green-400 text-green-400"><i class="scale-125 fas fa-mobile-alt"></i></span>
           <strong class="text-lg text-gray-400">Mobile app</strong>
       </div>
-      <div class="grid justify-center mb-14 lg:mb-0 gap-3 lg:absolute lg:bottom-0  lg:left-36">
+      <div class="grid justify-center mb-14 lg:animate-[drop_1500ms_ease-in-out_600ms_infinite] lg:mb-0 gap-3 lg:absolute lg:bottom-0  lg:left-36">
           <span class="rotated-span after:border-blue-400 text-blue-400"><i class="scale-125 fas fa-wallet"></i></span>
           <strong class="text-lg text-gray-400">Wallet</strong>
       </div>
-      <div class="grid justify-center mb-14 lg:mb-0 gap-3 lg:absolute lg:bottom-0 lg:right-36">
+      <div class="grid justify-center mb-14 lg:animate-[drop_1500ms_ease-in-out_800ms_infinite] lg:mb-0 gap-3 lg:absolute lg:bottom-0 lg:right-36">
           <span class="rotated-span after:border-red-400 text-red-400"><i class="scale-125 fas fa-lock"></i></span>
           <strong class="text-lg text-gray-400">Recuring Buys</strong>
       </div>
-      <div class="grid justify-center mb-14 lg:mb-0 gap-3 lg:absolute lg:right-0 lg:top-1/2 -translate-y-1/2">
+      <div class="grid justify-center mb-14 lg:animate-[drop_1500ms_ease-in-out_1000ms_infinite] lg:mb-0 gap-3 lg:absolute lg:right-0 lg:top-1/3 mt-4">
           <span class="rotated-span after:border-green-400 text-green-400"><i class="scale-125 fas fa-lock"></i></span>
           <strong class="text-lg text-gray-400">Instant Exchange</strong>
       </div>
-      <div class="grid justify-center mb-14 lg:mb-0 gap-3 lg:absolute lg:top-0 lg:right-36">
+      <div class="grid justify-center mb-14 lg:animate-[drop_1500ms_ease-in-out_1200ms_infinite] lg:mb-0 gap-3 lg:absolute lg:top-0 lg:right-36">
           <span class="rotated-span after:border-blue-400 text-blue-400"><i class="scale-125 fas fa-lock"></i></span>
           <strong class="text-lg text-gray-400">Experts support</strong>
       </div>
@@ -254,7 +256,7 @@
  </section>
 
  <!-- Experts Section -->
- <section class="pb-24">
+ <section class="py-24 bg-green-100">
     <div class="heading">
       <h1 class="heading-h1">OUR TEAM EXPERTS</h1>
       <p class="heading-p">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
@@ -263,17 +265,17 @@
   
   <div class="container">
     <div class="grid sm:grid-cols-3 w-11/12 m-auto text-center justify-center  gap-5">
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center bg-white shadow-lg py-8 rounded-md hover:shadow-md">
           <img class="w-9/12 h-10/12 mb-10 object-cover" src="./public/images/person1.png" alt="team-person">
           <h3 class="text-lg font-semibold mb-3">John Anderson</h3>
           <span class="text-paxlar text-sm">Consultant</span>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center bg-white shadow-lg py-8 rounded-md hover:shadow-md">
           <img class="w-9/12 h-10/12 mb-10 object-cover" src="./public/images/person2.png" alt="team-person">
           <h3 class="text-lg font-semibold mb-3">John Anderson</h3>
           <span class="text-paxlar text-sm">Consultant</span>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center bg-white shadow-lg py-8 rounded-md hover:shadow-md">
           <img class="w-9/12 h-10/12 mb-10 object-cover" src="./public/images/person3.png" alt="team-person">
           <h3 class="text-lg font-semibold mb-3">John Anderson</h3>
           <span class="text-paxlar text-sm">Consultant</span>
@@ -293,21 +295,21 @@
     <form action="">
       <div class="flex flex-col sm:flex-row gap-10">
         <div class="col-span-1 w-full mb-4">
-          <input class="w-full h-12 bg-transparent border border-white p-3 placeholder:text-white placeholder:text-xs" type="text" placeholder="Full name">
+          <input class="w-full h-12 bg-transparent border text-white focus:bg-paxlarLight focus:outline-none border-white p-3 placeholder:text-white placeholder:text-xs" type="text" placeholder="Full name">
         </div>
         <div class="col-span-1 w-full mb-4">
-          <input class="w-full h-12 bg-transparent border border-white p-3 placeholder:text-white placeholder:text-xs" type="email" placeholder="Your email">
+          <input class="w-full h-12 bg-transparent border text-white focus:bg-paxlarLight focus:outline-none border-white p-3 placeholder:text-white placeholder:text-xs" type="email" placeholder="Your email">
         </div>
         <div class="col-span-1 w-full mb-4">
-          <input class="w-full h-12 bg-transparent border border-white p-3 placeholder:text-white placeholder:text-xs" type="number" placeholder="Your phone">
+          <input class="w-full h-12 bg-transparent border text-white focus:bg-paxlarLight focus:outline-none border-white p-3 placeholder:text-white placeholder:text-xs" type="number" placeholder="Your phone">
         </div>
       </div>
       <div class="grid grid-cols-1">
         <div class="w-full">
-          <textarea class="w-full h-10 bg-transparent border border-white p-3 placeholder:text-white placeholder:text-xs h-24" name="" id="" placeholder="Your question"></textarea>
+          <textarea class="w-full bg-transparent border border-white p-3 placeholder:text-white placeholder:text-xs h-24 text-white focus:bg-paxlarLight focus:outline-none" name="" id="" placeholder="Your question"></textarea>
         </div>
       </div>
-      <button class="py-3 bg-paxlar border-paxlar text-white w-32 mx-auto block mt-16 rounded-3xl uppercase text-sm">Send</button>
+      <button class="py-3 bg-paxlar border border-paxlar text-white w-32 mx-auto block mt-16 rounded-3xl uppercase text-sm hover:bg-transparent hover:border-white transition-all duration-300">Send</button>
     </form>
   </div>
  </div>
@@ -322,7 +324,7 @@
     </div>
   <div class="container">
     <div class="grid sm:grid-cols-3 gap-8">
-      <div class="col-span-1 border border-gray-200 pb-5 rounded-lg">
+      <div class="col-span-1 border border-gray-200 pb-5 rounded-lg transition-all duration-300 ease-in hover:border hover:border-gray-300 hover:shadow-md hover:-translate-y-2">
         <div class="grid grid-cols-1 items-center">
           <div class="relative">
             <img class="mb-2 w-full" src="./public/images/blog1.png" alt="blog1.png">
@@ -335,12 +337,12 @@
          <div class="container">
           <div class="w-11/12 m-auto">
             <h1 class="text-base font-semibold text-gray-800 mb-2">It is a long established fact that a reader will be distracted</h1>
-            <p class="leading-4 text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque mollitia ullam neque quo voluptates suscipit sunt ab quidem sint?</p>
+            <p class="leading-5 text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque mollitia ullam neque quo voluptates suscipit sunt ab quidem sint?</p>
           </div>
          </div>
         </div>
       </div>
-      <div class="col-span-1 border border-gray-200 pb-5 rounded-lg">
+      <div class="col-span-1 border border-gray-200 pb-5 rounded-lg transition-all duration-300 ease-in hover:border hover:border-gray-300 hover:shadow-md hover:-translate-y-2">
         <div class="grid grid-cols-1 items-center">
           <div class="relative">
             <img class="mb-2 w-full h-full object-cover" src="./public/images/blog2.png" alt="blog2.png">
@@ -353,12 +355,12 @@
          <div class="container">
           <div class="w-11/12 m-auto">
             <h1 class="text-base font-semibold text-gray-800 mb-2">It is a long established fact that a reader will be distracted</h1>
-            <p class="leading-4 text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque mollitia ullam neque quo voluptates suscipit sunt ab quidem sint?</p>
+            <p class="leading-5 text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque mollitia ullam neque quo voluptates suscipit sunt ab quidem sint?</p>
           </div>
          </div>
         </div>
       </div>
-      <div class="col-span-1 border border-gray-200 pb-5 rounded-lg">
+      <div class="col-span-1 border border-gray-200 pb-5 rounded-lg transition-all duration-300 ease-in hover:border hover:border-gray-300 hover:shadow-md hover:-translate-y-2">
         <div class="grid grid-cols-1 items-center">
           <div class="relative">
             <img class="mb-2 w-full h-full object-cover" src="./public/images/blog3.png" alt="blog1.png">
@@ -371,7 +373,7 @@
          <div class="container">
           <div class="w-11/12 m-auto">
             <h1 class="text-base font-semibold text-gray-800 mb-2">It is a long established fact that a reader will be distracted</h1>
-            <p class="leading-4 text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque mollitia ullam neque quo voluptates suscipit sunt ab quidem sint?</p>
+            <p class="leading-5 text-gray-500 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet atque mollitia ullam neque quo voluptates suscipit sunt ab quidem sint?</p>
           </div>
          </div>
         </div>
@@ -382,35 +384,37 @@
  <!-- Blogs Section -->
 
  <!-- Feedback Section -->
- <section class="pb-24">
-  <div class="heading">
-    <h1 class="heading-h1">FEEDBACK FROM INVESTORS</h1>
-    <span class="heading-span"></span>
-  </div>
-  <div class="relative w-full">
-  <div class="container">
-    <div class="owl-carousel w-4/5 md:w-3/5 m-auto text-center">
-    <div class="feedback">
-      <p class="leading-4 text-gray-500 text-sm mb-20">LIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here</p>
-      <div class="w-24 h-24  m-auto relative mb-5">
-        <img class="w-full h-full rounded-full object-cover" src="./public/images/feedback.png" alt="feedback">
-        <span class="absolute bottom-1 border-2 border-white bg-paxlar text-white w-9 h-9 flex items-center justify-center rounded-full text-sm right-0"><i class="fas fa-quote-right"></i></span>
-      </div>
-      <h3 class="font-semibold mb-2">Jessica Williams</h3>
-      <span class="text-paxlar">Investor</span>
+ <section class="relative py-24 bg-lime-100">
+    <div class="heading">
+      <h1 class="heading-h1">FEEDBACK FROM INVESTORS</h1>
+      <span class="heading-span"></span>
     </div>
-    <div class="feedback">
-      <p class="leading-4 text-gray-500 text-sm mb-20">LIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here</p>
-      <div class="w-24 h-24  m-auto relative mb-5">
-        <img class="w-full h-full rounded-full object-cover" src="./public/images/bitcoin.png" alt="feedback">
-        <span class="absolute bottom-1 border-2 border-white bg-paxlar text-white w-9 h-9 flex items-center justify-center rounded-full text-sm right-0"><i class="fas fa-quote-right"></i></span>
-      </div>
-      <h3 class="font-semibold mb-2">Jessica Williams</h3>
-      <span class="text-paxlar">Investor</span>
-    </div>
-  </div>
-  </div>
-  </div>
+      <div class="relative w-full">
+        <div class="container">
+          <div class="w-4/5 md:w-4/5 m-auto p-14 shadow-md bg-white rounded-md">
+            <div class="owl-carousel text-center">
+          <div class="feedback">
+            <p class="leading-5 text-gray-500 text-sm mb-20">LIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here</p>
+            <div class="w-24 h-24  m-auto relative mb-5">
+              <img class="w-full h-full rounded-full object-cover" src="./public/images/feedback.png" alt="feedback">
+              <span class="absolute bottom-1 border-2 border-white bg-paxlar text-white w-9 h-9 flex items-center justify-center rounded-full text-sm right-0"><i class="fas fa-quote-right"></i></span>
+            </div>
+            <h3 class="font-semibold mb-2">Jessica Williams</h3>
+            <span class="text-paxlar">Investor</span>
+          </div>
+          <div class="feedback">
+            <p class="leading-5 text-gray-500 text-sm mb-20">LIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here</p>
+            <div class="w-24 h-24  m-auto relative mb-5">
+              <img class="w-full h-full rounded-full object-cover" src="./public/images/bitcoin.png" alt="feedback">
+              <span class="absolute bottom-1 border-2 border-white bg-paxlar text-white w-9 h-9 flex items-center justify-center rounded-full text-sm right-0"><i class="fas fa-quote-right"></i></span>
+            </div>
+            <h3 class="font-semibold mb-2">Jessica Williams</h3>
+            <span class="text-paxlar">Investor</span>
+          </div>
+        </div>
+          </div>
+        </div>
+        </div>
   </div>
  </section>
  <!-- Feedback Section -->
@@ -425,10 +429,10 @@
               <img class="mb-16" src="./public/images/footer_logo.png" alt="footer_logo">
             <p class="mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste tenetur eaque animi. Earum repudiandae quidem cum nemo, amet fugiat velit eveniet possimus at, voluptatum vel tempora ipsam modi ex? Nemo, recusandae quis voluptates culpa quaerat unde dolorum corrupti ipsum incidunt doloremque, fugit perspiciatis pariatur cum odio iure? Labore, quam repudiandae!</p>
             <ul class="flex gap-3">
-              <li class="border border-ftc rounded-full w-10 h-10 flex items-center justify-center"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li class="border border-ftc rounded-full w-10 h-10 flex items-center justify-center"><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li class="border border-ftc rounded-full w-10 h-10 flex items-center justify-center"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-              <li class="border border-ftc rounded-full w-10 h-10 flex items-center justify-center"><a href="#"><i class="fab fa-instagram"></i></a></li>
+              <li class="border border-ftc rounded-full w-10 h-10 flex items-center justify-center hover:text-white hover:border-white"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="border border-ftc rounded-full w-10 h-10 flex items-center justify-center hover:text-white hover:border-white"><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li class="border border-ftc rounded-full w-10 h-10 flex items-center justify-center hover:text-white hover:border-white"><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+              <li class="border border-ftc rounded-full w-10 h-10 flex items-center justify-center hover:text-white hover:border-white"><a href="#"><i class="fab fa-instagram"></i></a></li>
             </ul>
         </div>
         </div>
@@ -440,16 +444,16 @@
             </div>
             <div class="flex gap-3 justify-center leading-none mb-5">
               <i class="fas fa-map-marker-alt"></i>
-              <span>824 Bel Meadow Drive, California, USA.</span>
+              <span class="leading-5">824 Bel Meadow Drive, California, USA.</span>
             </div>
             <div class="flex gap-3 justify-center leading-none mb-5">
               <i class="fas fa-phone"></i>
-              <span>(+91) 999 999 9999,
+              <span class="leading-5">(+91) 999 999 9999,
                 (+91) 888 888 8888</span>
             </div>
             <div class="flex gap-3 justify-center leading-none mb-5">
               <i class="fas fa-globe"></i>
-              <span>info@paxlar.com,
+              <span class="leading-5">info@paxlar.com,
                 www.paxlar.com</span>
             </div>
         </div>
@@ -460,13 +464,13 @@
               <span class="toph-span"></span>
             </div>
             <ul class="links">
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Trading</a></li>
-              <li><a href="#">Software % App</a></li>
-              <li><a href="#">Wallet</a></li>
-              <li><a href="#">Exchange</a></li>
-              <li><a href="#">Mining Equipments</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li class="hover:text-white"><a href="#">About Us</a></li>
+              <li class="hover:text-white"><a href="#">Trading</a></li>
+              <li class="hover:text-white"><a href="#">Software % App</a></li>
+              <li class="hover:text-white"><a href="#">Wallet</a></li>
+              <li class="hover:text-white"><a href="#">Exchange</a></li>
+              <li class="hover:text-white"><a href="#">Mining Equipments</a></li>
+              <li class="hover:text-white"><a href="#">Contact Us</a></li>
           </ul> 
         </div>
         <div class="col-span-1">
@@ -476,7 +480,7 @@
             </div>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam ut corrupti doloribus minima optio, perspiciatis ex eum aliquid amet quod!</p> 
             <form action="" class="mt-7 relative">
-              <input type="email" placeholder="Email Address" class="w-full p-2 rounded-3xl"> 
+              <input type="email" placeholder="Email Address" class="w-full p-2 rounded-3xl focus:outline-none"> 
               <button type="submit" class="bg-paxlar rounded-3xl absolute top-0 right-0 h-full w-10 text-white"> <i class="fas fa-long-arrow-alt-right"></i></button> 
             </form>
         </div>
@@ -491,13 +495,13 @@
         </div>
         <div class="col-span-2">
           <ul class="flex flex-col lg:flex-row gap-5 justify-end uppercase text-sm">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Exchange</a></li>
-            <li><a href="#">Service</a></li>
-            <li><a href="#">Mining Equipments</a></li>
-            <li><a href="#">Pages</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="hover:text-white"><a href="#">Home</a></li>
+            <li class="hover:text-white"><a href="#">About</a></li>
+            <li class="hover:text-white"><a href="#">Exchange</a></li>
+            <li class="hover:text-white"><a href="#">Service</a></li>
+            <li class="hover:text-white"><a href="#">Mining Equipments</a></li>
+            <li class="hover:text-white"><a href="#">Pages</a></li>
+            <li class="hover:text-white"><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
