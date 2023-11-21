@@ -60,8 +60,8 @@ const counter1 = ()=>{
  if(!flag){
   count1.innerHTML=counterOneIteration;
   if(counterOneIteration<number1){
-    counterOneIteration+=100;
-    setTimeout("counter1()",100);
+    counterOneIteration+=1;
+    setTimeout("counter1()",1);
   }else{
     clearTimeout("counter1()");
   }
@@ -74,8 +74,8 @@ const counter2 = ()=>{
   if(!flag){
     count2.innerHTML=counterTwoIteration;
     if(counterTwoIteration<number2){
-      counterTwoIteration+=100;
-      setTimeout("counter2()",100);
+      counterTwoIteration+=1;
+      setTimeout("counter2()",1);
     }else{
       clearTimeout("counter2()");
     }
@@ -89,8 +89,8 @@ const counter3 = ()=>{
   if(!flag){
     count3.innerHTML=counterThreeIteration;
   if(counterThreeIteration<number3){
-    counterThreeIteration+=100;
-    setTimeout("counter3()",100);
+    counterThreeIteration+=1;
+    setTimeout("counter3()",1);
   }else{
     clearTimeout("counter3()");
   }
@@ -103,8 +103,8 @@ const counter4 = ()=>{
   if(!flag){
     count4.innerHTML=counterFourIteration;
     if(counterFourIteration<number4){
-      counterFourIteration+=100;
-      setTimeout("counter4()",100);
+      counterFourIteration+=1;
+      setTimeout("counter4()",1);
     }else{
       clearTimeout("counter4()");
     }
